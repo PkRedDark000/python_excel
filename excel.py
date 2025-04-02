@@ -79,4 +79,9 @@ for i in range(1, max_rows + 1):
     cell_vel = sheet.cell(column = 1, row = i)
     print(cell_vel.value)
 
+# step 9 margin and unmagin
+sheet = wb.active
+sheet.merge_cells("A1:C1") # merge
+wb.save("text.xlsx")
+sheet.unmerge_cells("A1:C1") # unmerge
 
