@@ -51,7 +51,32 @@ help(Workbook.sheet)
 
 s["B4"].font = styles.Font(name = "Bauhaus 93", size = 22, bold = True, italic = True, vertAlign = None, underline = None, strike = True, rgb = "000000FF")
 
+# step 7 read the excel files
+path = "D:\\VS CODE\\Excel Python\\python_excel\text.xlsx" # path select 
+wb_file = openpyxl.load_workbook(path)
+we_file
+sheet = wb_file.active
+c3 = sheet.cell(row = 3, column = 3)
+c3
+c3.value
 
+# step 8 how many row avali in excel
+sheet.max_row #up to down
+sheet.max_column # rigth to left
+sheet
 
+# this one column conut
+max_col = sheet.max_column
+max_col
+for i in range(1, max_col + 1):
+    cell_vel =sheet.cell(row = 1, column = i)
+    print(cell_vel.value)
+
+# this one row count
+max_rows = sheet.max_row
+max_rows
+for i in range(1, max_rows + 1):
+    cell_vel = sheet.cell(column = 1, row = i)
+    print(cell_vel.value)
 
 
