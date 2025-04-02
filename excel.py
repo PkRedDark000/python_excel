@@ -1,7 +1,8 @@
-pip install openpyxl
+# pip install openpyxl
 import openpyxl
 import os
 from openpyxl import Workbook
+import time
 
 dir(openpyxl) #open the dir
 wb  = Workbook()   #wb = workbook
@@ -25,6 +26,16 @@ sheet1.title = "New Title" # rename replese old name
 
 # step 4 colour change comment
 sheet3.sheet_properties.tabColor = "FF0000" # only for colour code 
+
+# step 5 all type 
+sheet["A1"] = 100
+sheet["A2"] = 10.123
+sheet["A3"] = "welcome"
+import time
+now = time.strftime("%x") # time format
+sheet["A4"] = now
+
+
 
 
 
