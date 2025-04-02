@@ -49,6 +49,7 @@ s["B4"] = "Santra"
 help(styles.Font)
 help(Workbook.sheet)
 
+s["B4"].font = styles.Font(name = "Bauhaus 93", size = 22, bold = True, italic = True, vertAlign = None, underline = None, strike = True, rgb = "000000FF")
 
 
 
