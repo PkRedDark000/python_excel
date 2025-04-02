@@ -20,6 +20,14 @@ sheet3  =wb.create_sheet("test1 book") # with name
 sheet4  =wb.create_sheet("test2 book",0) # with name with opstion
 sheet5  =wb.create_sheet("test2 book",1) # with name with opstion
 
+# step 3 sheet Rename comment
+sheet1.title = "New Title" # rename replese old name
+
+# step 4 colour change comment
+sheet3.sheet_properties.tabColor = "FF0000" # only for colour code 
+
+
+
 
 
 
