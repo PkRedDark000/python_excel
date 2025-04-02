@@ -85,3 +85,11 @@ sheet.merge_cells("A1:C1") # merge
 wb.save("text.xlsx")
 sheet.unmerge_cells("A1:C1") # unmerge
 
+# step 10 size row and column
+wb = Workbook()
+sheet = wb.active
+sheet["A1"] = "test"
+sheet.row_dimensions[1].height = 70
+sheet.column_dimensions["A"].width = 20
+wb.save ("text.xlsx")
+wb.close
