@@ -3,6 +3,8 @@ import openpyxl
 import os
 from openpyxl import Workbook
 import time
+from openpyxl import styles
+
 
 dir(openpyxl) #open the dir
 wb  = Workbook()   #wb = workbook
@@ -35,10 +37,17 @@ import time
 now = time.strftime("%x") # time format
 sheet["A4"] = now
 
+v1 = sheet["B1"] # B1 shell now
+v1.value = 200
+sheet.cell(row = 3, column = 3).value = "2000"
 
-
-
-
+# step 6 styles 
+from openpyxl import styles
+s = wb.active
+s
+s["B4"] = "Santra"
+help(styles.Font)
+help(Workbook.sheet)
 
 
 
