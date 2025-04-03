@@ -50,6 +50,8 @@ help(styles.Font)
 help(Workbook.sheet)
 
 s["B4"].font = styles.Font(name = "Bauhaus 93", size = 22, bold = True, italic = True, vertAlign = None, underline = None, strike = True, rgb = "000000FF")
+red = "FF0000"
+sheet["A1"].font = styles.Font(name = "Bauhaus 93", size = 22, bold = True, italic = True, underline = None,strike = True, color = red)
 
 # step 7 read the excel files
 path = "D:\\VS CODE\\Excel Python\\python_excel\text.xlsx" # path select 
